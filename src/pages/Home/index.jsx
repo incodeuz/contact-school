@@ -1,8 +1,11 @@
 import React from 'react'
+import Question from '../../components/Question'
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Question/>
+    </div>
   )
 }
 
