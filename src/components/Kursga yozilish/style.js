@@ -67,6 +67,7 @@ border-radius: 6px;
 color: #FFFFFF;
 margin-left: 55px;
 margin-top: 85px;
+border: none;
 `
 
 
