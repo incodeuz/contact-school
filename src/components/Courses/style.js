@@ -90,7 +90,7 @@ font-size: 14px;
 line-height: 17px;
 color: #70C63B;
 margin-left: 180px;
-margin-top: 40px;
+margin-top: 30px;
 
 `
 
