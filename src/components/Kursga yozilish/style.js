@@ -70,24 +70,3 @@ margin-top: 85px;
 `
 
 
-export const Select = styled.select`
-width: 500px;
-height: 65px;
-background: #F8FAFC;
-border: 2px solid #EFF2F7;
-border-radius: 6px;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-margin: 0.5px 55px;
-margin-top: 30px;
-margin-right: 10px;
-color: #8894A0;
-`
-export const Option = styled.option`
-width: 500px;
-height: 30px;
-background: rgba(247, 247, 247, 0.8);
-border-radius: 5px 5px 0px 0px;
-`
