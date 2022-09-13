@@ -1,8 +1,9 @@
 import React from 'react'
+import Kursgayozil from '../../components/Kursga yozilish'
 
 export const Register = () => {
   return (
-    <div>Register</div>
+    <Kursgayozil/>
   )
 }
 
