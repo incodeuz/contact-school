@@ -1,4 +1,4 @@
-import { Cardbox, Card, CardButton, CardText, CardSpan, Names, LastOne, Wrapper } from './style'
+import { Cardbox, Card, CardButton, CardText, CardSpan, Names, LastOne, Wrapper, NamesWrapper } from './style'
 import React from 'react'
 import { Container, Wrap, Text, Color, Btn } from './style'
 import { courseData } from '../../Mock/course'
@@ -25,8 +25,10 @@ export const Courses = () => {
                 </Wrapper>
 
                 <CardText>{value.title} <CardSpan>{value.title1}</CardSpan> </CardText>
+                <NamesWrapper>
                 <Names>{value.name1}</Names>
                 <Names>{value.name2}</Names>
+                </NamesWrapper>
                 <LastOne>{value.title2}</LastOne>
 
               </Card>

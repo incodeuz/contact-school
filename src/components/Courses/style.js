@@ -5,7 +5,8 @@ export const Container = styled.div`
 width: 100%;
 height: 100vh;
 .ikon{
-  margin: 40px;
+  margin-left: 40px;
+  margin-top: 40px;
 }
 `
 export const Wrap =styled.div`
@@ -89,8 +90,8 @@ font-weight: 500;
 font-size: 14px;
 line-height: 17px;
 color: #70C63B;
-margin-left: 180px;
-margin-top: 30px;
+margin-left: 210px;
+margin-top: 40px;
 
 `
 
@@ -101,6 +102,7 @@ font-size: 24px;
 line-height: 29px;
 color: #332233;
 margin-left: 40px;
+margin-top: 25px;
 
 `
 export const CardSpan = styled.span`
@@ -111,6 +113,10 @@ line-height: 29px;
 color: #FF9D42;
 
 `
+export const NamesWrapper = styled.div`
+margin-top: 25px;
+
+`
 export const Names = styled.div`
 font-style: normal;
 font-weight: 500;
@@ -118,8 +124,7 @@ font-size: 16px;
 line-height: 19px;
 color: #8A90A5;
 margin-left: 40px;
-margin-top: 10px;
-
+margin-top: 5px;
 `
 export const LastOne = styled.div`
 font-style: normal;
