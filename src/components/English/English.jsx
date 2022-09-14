@@ -1,7 +1,7 @@
 import { Card, CardFormat, CardInfo, CardNumber, CardText, CardWrapper, NumberWrapper, WrapperCard } from './style'
 import React from 'react'
 import { Color, Container, Wrap, Text, DescText } from './style'
-import { englishData } from '../../Mock/english'
+import { englishData } from '../../mock/english'
 
 export const English = () => {
   return (

@@ -16,8 +16,12 @@ font-weight: 900;
 font-size: 45px;
 line-height: 54px;
 color: #FF9D42;
-@media screen  {
-    
+
+@media screen and (max-width: 930px){
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;    
 }
 `
 
@@ -27,6 +31,12 @@ font-weight: 900;
 font-size: 45px;
 line-height: 54px;
 color: #000000;
+
+@media screen and (max-width: 930px){
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px; 
+}
 
 `
 export const DescText = styled.div`
@@ -39,6 +49,13 @@ line-height: 29px;
 color: #8A90A5;
 height: 87px;
 width: 634px;
+
+@media screen and (max-width: 930px){
+    width: 305px;
+    height: 145px;
+    font-size: 18px;
+    line-height: 29px;  
+}
 `
 export const CardWrapper = styled.div`
 width:70%; 
@@ -57,8 +74,6 @@ box-sizing: border-box;
 display: flex;
 margin: auto;
 margin-top: 30px;
-
-
 `
 export const WrapperCard = styled.div`
 
@@ -69,7 +84,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 19px;
-text-transform: uppercase;
 color: #FF9D42;
 margin-top: 40px;
 margin-left: 40px;
@@ -94,18 +108,15 @@ font-size: 16px;
 line-height: 24px;
 color: #8A90A5;
 margin-left: 40px;
-margin-top: 20px;
+margin-top: 20px;    
 `
 export const NumberWrapper = styled.div`
-display: flex;
 margin-top: 30px;
 margin-left: 35px;
 
 `
 
 export const CardNumber =  styled.div`
-height: 167px;
-width: 171px;
 font-style: normal;
 font-weight: 900;
 font-size: 140px;
