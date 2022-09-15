@@ -1,6 +1,6 @@
 import { ReactComponent as logo } from "../assets/icons/logo.svg"
 
-export const courseData = [
+export var courseData = [
     {id:1, icons: logo, title: 'Ingliz Tili', title1:'IELTS', btn:'TOP', name1:'Fozilhon Buzrukhojayev', name2: 'Umarkhon Buzrukhojayev', title2:'Batafsil' },
     {id:2, icons: logo, title: 'Ingliz Tili', title1:'Grammar', btn:'TOP', name1:'Fozilhon Buzrukhojayev', name2: 'Umarkhon Buzrukhojayev', title2:'Batafsil' },
     {id:3, icons: logo, title: 'Ingliz Tili', title1:'CEFR', btn:'YANGI', name1:'Fozilhon Buzrukhojayev', name2: 'Umarkhon Buzrukhojayev', title2:'Batafsil' },
