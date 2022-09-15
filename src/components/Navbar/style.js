@@ -1,14 +1,20 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import {ReactComponent as Menu} from "../../assets/icons/menu.svg";
+import { ReactComponent as Menu } from "../../assets/icons/menu.svg";
 
 const Container = styled.div`
   width: 100%;
-  max-width: 1300px;
-  height: 60px;
+  height: 132px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 34px;
+  justify-content: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  .active {
+    color: #ff9d42;
+  }
+
   @media screen and (max-width: 1300px) {
     padding: 0 30px;
   }
@@ -19,7 +25,34 @@ const Container = styled.div`
   }
 `;
 
-const Title = styled.div`
+const Wrapper = styled.div`
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Title = styled(NavLink)`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  :hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
+    .flex {
+      display: none;
+    }
+  }
+`;
+
+const Text = styled.div`
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -70,4 +103,4 @@ const Hamburger = styled(Menu)`
   }
 `;
 
-export { Container, Title, Button, Hamburger };
+export { Container, Wrapper, Title, Button, Hamburger, Text };
