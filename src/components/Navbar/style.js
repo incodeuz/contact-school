@@ -42,6 +42,7 @@ const Title = styled(NavLink)`
   color: #ffffff;
   :hover {
     cursor: pointer;
+    color: #ff9d42;
   }
   @media screen and (max-width: 800px) {
     display: none;

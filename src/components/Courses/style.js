@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 width: 100%;
-height: 100vh;
 .ikon{
   margin-left: 40px;
   margin-top: 40px;

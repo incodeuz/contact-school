@@ -1,7 +1,7 @@
 import { Cardbox, Card, CardButton, CardText, CardSpan, Names, LastOne, Wrapper, NamesWrapper } from './style'
 import React from 'react'
 import { Container, Wrap, Text, Color, Btn } from './style'
-import { courseData } from '../../Mock/course'
+import { courseData } from '../../mock/course'
 
 export const Courses = () => {
   return (
