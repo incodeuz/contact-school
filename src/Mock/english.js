@@ -1,0 +1,17 @@
+export var englishData = [
+    {id:1, 
+    title:'KURS TURI',
+    format:'Oflayn',
+    desc:'Oflayn kurslarimiz yordamida siz tanlagan yo’nalishingiz va portfolio yaratish bo’yicha boshlang’ich bilimlarni egallaysiz',
+    num:'01'},
+    {id:2, 
+    title:'DAVOMIYLIGI',
+    format:'5 oy',
+    desc:'Oflayn kurslarimiz yordamida siz tanlagan yo’nalishingiz va portfolio yaratish bo’yicha boshlang’ich bilimlarni egallaysiz',
+    num:'02'},
+    {id:3, 
+    title:'Mashg’ulot Turi',
+    format:'Intensiv tarzda',
+    desc:'Oflayn kurslarimiz yordamida siz tanlagan yo’nalishingiz va portfolio yaratish bo’yicha boshlang’ich bilimlarni egallaysiz',
+    num:'03'},
+]
