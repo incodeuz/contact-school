@@ -1,14 +1,24 @@
-import React from "react";
-import { Container, Image, PreTitle, Title } from "./style";
+import React, { useState } from "react";
+import {
+  Card,
+  Container,
+  PreTitle,
+  Title,
+  Img,
+  FlexCon,
+  FlexCon2,
+} from "./style";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
+import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Img from "../../assets/images/card.png";
+import Imga from "../../assets/images/ielts.png";
+import { cardData } from "../../utils/card";
 
 const Carousel = () => {
+  const [cardView, setCardView] = useState(1.6);
   return (
-    <Container>
+    <Container card={[cardView, setCardView]}>
       <div className="flex-column">
         <Title>Bizning o’quvchilar</Title>
         <PreTitle>
@@ -21,7 +31,7 @@ const Carousel = () => {
       </div>
       <>
         <Swiper
-          slidesPerView={1.6}
+          slidesPerView={cardView}
           centeredSlides={true}
           spaceBetween={30}
           grabCursor={true}
@@ -33,16 +43,100 @@ const Carousel = () => {
           className="mySwiper"
         >
           <SwiperSlide className="hallo">
-            <img src={Img} alt="" />
+            <Card>
+              <div className="flex">
+                <Img src={Imga} />
+                <div className="flex-column">
+                  <Card.Title>Abdulloh Qiyomov</Card.Title>
+                  <FlexCon>
+                    {cardData.map((value) => {
+                      return (
+                        <FlexCon2>
+                          <p className="thin">{value.title}</p>
+                          <p className="bold">{value.score}</p>
+                        </FlexCon2>
+                      );
+                    })}
+                  </FlexCon>
+                  <FlexCon2 align>
+                    <p className="bold">Bandscore:</p>
+                    <Card.Title>8.0</Card.Title>
+                  </FlexCon2>
+                </div>
+              </div>
+            </Card>
           </SwiperSlide>
           <SwiperSlide className="hallo">
-            <img src={Img} alt="" />
+            <Card>
+              <div className="flex">
+                <Img src={Imga} />
+                <div className="flex-column">
+                  <Card.Title>Abdulloh Qiyomov</Card.Title>
+                  <FlexCon>
+                    {cardData.map((value) => {
+                      return (
+                        <FlexCon2>
+                          <p className="thin">{value.title}</p>
+                          <p className="bold">{value.score}</p>
+                        </FlexCon2>
+                      );
+                    })}
+                  </FlexCon>
+                  <FlexCon2 align>
+                    <p className="bold">Bandscore:</p>
+                    <Card.Title>8.0</Card.Title>
+                  </FlexCon2>
+                </div>
+              </div>
+            </Card>
           </SwiperSlide>
           <SwiperSlide className="hallo">
-            <img src={Img} alt="" />
+            <Card>
+              <div className="flex">
+                <Img src={Imga} />
+                <div className="flex-column">
+                  <Card.Title>Abdulloh Qiyomov</Card.Title>
+                  <FlexCon>
+                    {cardData.map((value) => {
+                      return (
+                        <FlexCon2>
+                          <p className="thin">{value.title}</p>
+                          <p className="bold">{value.score}</p>
+                        </FlexCon2>
+                      );
+                    })}
+                  </FlexCon>
+                  <FlexCon2 align>
+                    <p className="bold">Bandscore:</p>
+                    <Card.Title>8.0</Card.Title>
+                  </FlexCon2>
+                </div>
+              </div>
+            </Card>
           </SwiperSlide>
           <SwiperSlide className="hallo">
-            <img src={Img} alt="" />
+            <Card>
+              <div className="flex">
+                <Img src={Imga} />
+                <div className="flex-column">
+                  <Card.Title>Abdulloh Qiyomov</Card.Title>
+                  <FlexCon>
+                    {cardData.map((value) => {
+                      return (
+                        <FlexCon2>
+                          <p className="thin">{value.title}</p>
+                          <p className="bold">{value.score}</p>
+                        </FlexCon2>
+                      );
+                    })}
+                  </FlexCon>
+                  <FlexCon2 align>
+                    <p className="bold">Bandscore:</p>
+                    <Card.Title>8.0</Card.Title>
+                  </FlexCon2>
+                </div>
+              </div>
+            </Card>
           </SwiperSlide>
         </Swiper>
       </>

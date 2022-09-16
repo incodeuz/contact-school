@@ -11,6 +11,27 @@ const Container = styled.div`
   background-color: black;
   position: sticky;
   top: 0;
+  z-index: 11;
+  .abs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 132px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    height: ${window.innerHeight - 132}px;
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+  }
+  .rasm {
+    width: 19px;
+    height: 19px;
+  }
   .active {
     color: #ff9d42;
   }
@@ -18,11 +39,11 @@ const Container = styled.div`
   @media screen and (max-width: 1300px) {
     padding: 0 30px;
   }
-  @media screen and (max-width: 1200px) {
+  /* @media screen and (max-width: 1200px) {
     .flex {
       display: none;
     }
-  }
+  } */
 `;
 
 const Wrapper = styled.div`
@@ -31,6 +52,16 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .wrapper {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
 `;
 
 const Title = styled(NavLink)`
@@ -44,12 +75,12 @@ const Title = styled(NavLink)`
   :hover {
     cursor: pointer;
   }
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     display: none;
     .flex {
       display: none;
     }
-  }
+  } */
 `;
 
 const Text = styled.div`
@@ -66,12 +97,12 @@ const Text = styled.div`
     cursor: pointer;
     color: ${({ without }) => (without ? "white" : "var(--color)")};
   }
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     display: none;
     .flex {
       display: none;
     }
-  }
+  } */
 `;
 
 const Button = styled.button`
@@ -91,14 +122,17 @@ const Button = styled.button`
     background: #ff9d42;
     color: white;
   }
-  @media screen and (max-width: 1200px) {
+  /* @media screen and (max-width: 1200px) {
     display: none;
-  }
+  } */
 `;
 
 const Hamburger = styled(Menu)`
   display: none;
-  @media screen and (max-width: 1200px) {
+  :hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1000px) {
     display: flex;
   }
 `;
