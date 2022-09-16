@@ -35,7 +35,15 @@ color: #FF9D42;
  background: #FFFFFF;
 border: 1px solid #EFF2F7;
 box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
- 
+ `
+ export const InputTitle = styled.div`
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+text-align: center;
+color: #323A56;
+margin-top: 54px;
  `
 export const Input = styled.input`
 width: 500px;
@@ -68,6 +76,8 @@ color: #FFFFFF;
 margin-left: 55px;
 margin-top: 85px;
 border: none;
+:hover{
+}
 `
 
 
