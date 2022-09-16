@@ -49,9 +49,6 @@ export const Btn = styled.button`
     background: #ff9d42;
     color: white;
   }
-  @media screen and (max-width: 1200px) {
-    display: none;
-  }
 `;
 
 
@@ -137,6 +134,7 @@ margin-left: 302px;
 margin-top: 5px;
 
 `
+
 
 
 

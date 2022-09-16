@@ -1,8 +1,13 @@
 import React from 'react'
+import Afzalliklar from './afzalliklar.jsx'
+import OurFounders from './OurFounders.jsx'
 
 export const Home = () => {
   return (
-    <div></div>
+    <div>
+      <Afzalliklar/>
+      <OurFounders/>
+    </div>
   )
 }
 
