@@ -3,31 +3,33 @@ import styled from "styled-components";
 export const Container = styled.div`
 padding: 100px 0;
 width: 100%;
-max-width: 1920px;
+max-width: 1400px;
 display: flex;
 justify-content: center;
+margin: auto;
+@media(max-width: 900px){
+    padding: 100px 10px;
+}
 `;
 
 export const Wrapper = styled.div`
-width: 80%;
+width: 100%;
 
 @media (max-width:750px){
     width: 100%;
 }
 `
 export const Title = styled.div`
-width: 100%;
-display: flex;
-justify-content: center;
-`
-Title.T =styled.p`
 font-family: 'Inter';
 font-size: 48px;
 font-weight: 700;
 color: ${({yell})=> yell ? 'rgba(255, 157, 66, 1)':'rgba(0,0,0, 1)'};
 text-transform: capitalize;
 margin-left: ${({yell})=> yell ? '10px':'0'};
-
+text-align: center;
+span{
+    color: #FF9D42;
+}
 @media (max-width: 1100px){
     font-size: 30px;
 }
@@ -39,7 +41,6 @@ margin-left: ${({yell})=> yell ? '10px':'0'};
 
 export const Block = styled.div`
 width: 100%;
-
 @media (max-width:950px){
     display: flex;
     justify-content: center;
@@ -67,6 +68,8 @@ justify-content: space-between;
 @media (max-width:750px){
     width: 100%;
     max-width: 90%;
+    padding: 15px;
+
 }
 `
 export const CardImg = styled.img`
@@ -85,6 +88,7 @@ max-width: 300px;
 }
 @media (max-width:576px){
     width: 230px;
+    height: 230px;
 }
 `
 export const CT = styled.div`
@@ -128,6 +132,9 @@ color: #000000;
 
 @media (max-width:1100px){
     font-size: 14px;
+}
+@media(max-width:400px){
+    display: none;
 }
 `
 

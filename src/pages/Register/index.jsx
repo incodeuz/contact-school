@@ -1,10 +1,8 @@
-import React from 'react'
-import Kursgayozil from '../../components/Kursga yozilish'
+import React from 'react';
+import Register from '../../components/Register';
 
-export const Register = () => {
-  return (
-    <Kursgayozil/>
-  )
-}
+export const RegisterPage = () => {
+  return <Register />;
+};
 
-export default Register
+export default RegisterPage;

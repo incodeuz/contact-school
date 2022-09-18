@@ -1,25 +1,33 @@
 import styled from "styled-components";
 import { ReactComponent as icon } from "../../assets/icons/notfount.svg";
+import { ReactComponent as arrow } from "../../assets/icons/arrow.svg";
 
 
 export const Container = styled.div`
 width: 100%;
-height: 1368px;
-margin-top: 242px;
-margin:auto;
-
-
-`
-export const Wrap = styled.div`
+height: 100vh;
 display: flex;
+flex-direction: column;
 align-items: center;
+justify-content: center;
+
+
 `
+
 export const Icon = styled(icon)`
 width: 750px;
 height: 500px;
 border-radius: 0px;
 background: #FFFFFF;
-margin: auto;
+@media(max-width:900px){
+  width: 80%;
+  height: auto;
+}
+@media(max-width:600px){
+    width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
 `
 export const Title = styled.div`
 font-style: normal;
@@ -27,15 +35,25 @@ font-weight: 700;
 font-size: 54px;
 line-height: 65px;
 text-align: center;
-color: black;
-`
-export const Color = styled.span`
-font-style: normal;
-font-weight: 700;
-font-size: 54px;
-line-height: 65px;
-text-align: center;
-color: #FF9D42;
+color: #323A56;
+span{
+    color: #FF9D42;
+}
+@media(max-width:900px){
+    font-weight: 700;
+    font-size: 36px; 
+    line-height: 45px;
+}
+@media(max-width:600px){
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px; 
+}
+@media(max-width:375px){
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+}
 `
 export const Text= styled.text`
 font-style: normal;
@@ -48,12 +66,19 @@ justify-content: center;
 text-align: center;
 margin-top: 16px;
 color: #8A90A5;
+@media(max-width:600px){
+    font-weight: 400;
+    font-size: 18px;
+    width :80% ;
+}
+@media(max-width:375px){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+}
 `
-export const Flexing =styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-`
+
 export const Button = styled.button`
 width: 226px;
 height: 64px;
@@ -67,4 +92,22 @@ text-align: center;
 color: #FFFFFF;
 margin-top: 20px;
 border: none;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+
+:active{
+    transform: scale(0.98);
+}
+@media(max-width:600px){
+width: 205px;
+height: 54px;
+font-size: 18px;
+line-height: 22px;
+}
+`
+
+Button.Arrow = styled(arrow)`
+margin-left: 14px;
 `
