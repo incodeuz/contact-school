@@ -1,19 +1,16 @@
 import React from 'react'
-import { Block, Card, CardImg, Container, CT, Title, Wrapper, LinkImg } from './OurFounders'
+import { Block, Card, CardImg, Container, CT, Title, Wrapper, LinkImg } from './style'
 import founder from '../../assets/images/founder.svg'
 import tl from '../../assets/icons/Telegram_link.svg'
 import yt from '../../assets/icons/Youtube_link.svg'
 import ig from '../../assets/icons/Instagram_link.svg'
 
 
-const OurFounders = () => {
+const Owner = () => {
   return (
     <Container>
         <Wrapper>
-            <Title>
-                <Title.T> bizning </Title.T>
-                <Title.T yell> asoschilarimiz</Title.T>
-            </Title>
+                <Title> bizning <span>asoschilarimiz</span> </Title>
 
             <Block>
                 <Card fRight>
@@ -59,4 +56,4 @@ const OurFounders = () => {
   )
 }
 
-export default OurFounders
+export default Owner

@@ -2,44 +2,49 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 width: 100%;
-max-width: 1920px;
+max-width: 1440px;
 display: flex;
-justify-content: center;
+flex-direction: column;
+align-items: center;
 padding: 50px 0;
+margin: auto;
 ` 
 
-export const Title = styled.div`
-width: 100%;
-text-align: center;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-`
-export const Orange = styled.span`
-color: rgba(255, 157, 66, 1);
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 45px;
-line-height: 54px;
-`
 export const Word = styled.span`
-margin-left: 10px;
 color: rgba(0, 0, 0, 1);
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
 font-size: 45px;
 line-height: 54px;
+text-align: center;
+span{
+    color: #FF9D42;
+}
+@media(max-width: 1200px){
+    font-size: 40px;
+    line-height:44px;
+}
+@media(max-width: 600px){
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0px 5px;
+}
 `
 
-export const Text = styled.p`
+export const Text = styled.div`
 margin-top: 15px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 24px;
+text-align: center;
+@media(max-width: 600px){
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0px 5px;
+}
 `
 
 export const Wrapper = styled.div`

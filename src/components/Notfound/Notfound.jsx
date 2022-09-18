@@ -1,20 +1,13 @@
 import React from 'react'
-import { Container, Icon, Title,  Wrap } from './style'
-import { Color } from './style'
-import { Text } from './style'
-import { Flexing, Button } from './style'
+import { Container, Icon, Title, Text , Button} from './style'
 
 export const Notfound = () => {
   return (
     <Container>
-      <Wrap>
         <Icon/>
-      </Wrap>
-        <Title>Uzr, <Color>xatolik </Color> ro‘y berdi!</Title>
+        <Title>Uzr, <span>xatolik </span> ro‘y berdi!</Title>
         <Text>Asosiy menuga qaytish uchun tugmani bosing.</Text>
-        <Flexing>
-        <Button>Asosiy menu</Button>
-        </Flexing>
+        <Button>Asosiy menu <Button.Arrow/> </Button>
     </Container>
   )
 }

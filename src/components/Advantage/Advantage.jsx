@@ -1,17 +1,13 @@
 import React from 'react'
-import {Container, Title, Orange, Word, Text, Wrapper, Box} from './afzalliklar'
+import {Container, Word, Text, Wrapper, Box} from './style'
 import {afzallik} from '../../utils/afzallik'
 
-export const Afzalliklar = () => {
+export const Advantage = () => {
   return (
     <Container>
-        <Title>
 
-            <Title>
-                <Orange> “CONTACT SCHOOL“ </Orange> 
-                <Word>o’quv markazi afzaliklari</Word>
-                <Text>Har bir o'quvchimiz quyidagi afzalliklarga ega bo'ladi</Text>
-            </Title>
+        <Word><span> “CONTACT SCHOOL“ </span> o’quv markazi afzaliklari</Word>
+        <Text>Har bir o'quvchimiz quyidagi Avzallikka ega boladi ega bo'ladi</Text>
               
             <Wrapper>
                 {afzallik.map((item)=>{
@@ -22,9 +18,8 @@ export const Afzalliklar = () => {
                         </Box>
                     )})}
             </Wrapper>
-        </Title>
     </Container>
   )
 }
 
-export default Afzalliklar
+export default Advantage
